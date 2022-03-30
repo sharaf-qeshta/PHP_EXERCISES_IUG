@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="FormsExercises.php" method="post" style="display: flex; align-items: center;
+ flex-direction: column">
+    <input type="text" placeholder="Your Name" name="display_name" style="margin: 10px" required>
+    <input type="email" placeholder="Email" name="email" style="margin: 10px" required>
+    <input type="tel" placeholder="Phone Number" style="margin: 10px" required name="phone_number">
+
+    <div style="display: flex; flex-direction: row">
+        <input type="radio" name="gender" value="male" style="margin: 10px" required> Male
+        <input type="radio" name="gender" value="female" style="margin: 10px" required> Female
+    </div>
+
+    <select name="nationality" style="margin: 10px" required>
+        <option value="palestinian" selected>Palestinian</option>
+        <option value="british">British</option>
+        <option value="american">American</option>
+        <option value="chinese">Chinese</option>
+        <option value="indian">Indian</option>
+        <option value="french">French</option>
+        <option value="german">German</option>
+    </select>
+
+    <div style="display: flex; flex-direction: row">
+        <input type="radio" name="have_file" value="have_file" style="margin: 10px" required> Have File In archive
+    </div>
+
+    <div style="display: flex; flex-direction: row">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </div>
+</form>
+
+</body>
+</html>
